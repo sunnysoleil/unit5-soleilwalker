@@ -33,7 +33,7 @@ function searchFunction() {
 *   - Set @name photoCaption to iterate over all results from @name galleryItem and retrieve their value from data-caption attribute.
 *       - Add .getAttribute('data-caption') to get the caption.
 *       - Add .toLowerCase() method to convert the caption to lowercase.
-*       - if @name photoCaption does NOT include the @name currentInput , using false boolean and .includes() method.
+*       - if @name photoCaption does NOT include the @name currentInput , using logical NOT operator and .includes() method.
 *           - Set @name photo.style.display to "none" to hide the image , using .style property to get styling attribute and .display to get display property.
 *       - else
 *           - Set @name photo.style.display to "" to leave display attribute of image as is , using .style property to get styling attribute and .display to get display property.
