@@ -3,7 +3,7 @@
 }
 
 body {
-    margin: auto 100px;
+    margin: auto 3rem;
 }
 
 .searchbox {
@@ -33,21 +33,15 @@ input:focus {
     max-width: 1120px;
     margin: 50px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 40px;
     justify-items: center;
 }
 
 .gallery img {
-    width: 250px;
+    width: 200px;
     height: auto;
     border-radius: 6px;
-}
-
-@media (max-width: 1024px) {
-    body {
-        margin: auto 2rem;
-    }
 }
 
 @media (min-width: 604px) and (max-width: 890px) {
