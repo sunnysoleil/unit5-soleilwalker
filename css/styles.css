@@ -6,6 +6,8 @@ body {
     margin: auto 3rem;
 }
 
+/* --------------- INPUT FIELD --------------- */
+
 .searchbox {
     display: flex;
     justify-content: center;
@@ -29,6 +31,8 @@ input:focus {
     border: 2px #79bbdf solid;
 }
 
+/* --------------- GALLERY --------------- */
+
 .gallery {
     max-width: 1120px;
     margin: 50px auto;
@@ -44,8 +48,3 @@ input:focus {
     border-radius: 6px;
 }
 
-@media (min-width: 604px) and (max-width: 890px) {
-    .gallery {
-        max-width: 620px; 
-    }
-}
