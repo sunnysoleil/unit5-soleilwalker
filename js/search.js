@@ -3,13 +3,13 @@ inputField.addEventListener("keyup", searchFunction);
 
 function searchFunction() {
     let currentInput = inputField.value.toLowerCase();
-    let galleryItem = document.querySelectorAll("img");
+    let galleryItem = document.querySelectorAll("a");
     galleryItem.forEach(photo => {
-        let photoCaption = photo.getAttribute('alt').toLowerCase();
+        let photoCaption = photo.getAttribute('data-caption').toLowerCase();
         if (!photoCaption.includes(currentInput)) {
-            photo.parentNode.style.display = "none";
+            photo.style.display = "none";
         } else {
-            photo.parentNode.style.display = "";
+            photo.style.display = "";
         }
     });
 }
